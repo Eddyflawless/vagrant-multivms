@@ -1,6 +1,6 @@
 # Remote lab
 
-## You can specify the box you want to deploy by visiting https://vagrantcloud.com/search and making the change according in the `Vagrantfile`
+<p>You can specify the box you want to deploy by visiting https://vagrantcloud.com/search and making the change according in the Vagrantfile</p>
 
 ## Requirements
 -   Vagrant should be installed https://docs.vagrantup.com
