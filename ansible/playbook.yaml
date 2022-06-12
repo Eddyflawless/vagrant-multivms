@@ -1,0 +1,27 @@
+---
+
+- name: Manage Apache
+  hosts: all
+  gather_facts: false
+  become: true
+  tasks:
+    - name: Install apache2 and php packages (Ubuntu)
+      package:
+        name:
+          - apache2
+          - php
+          - php-mysql 
+          - php-curl 
+          - php-gd 
+          - php-json 
+          - php-zip 
+          - php-mbstring 
+          - php-gettext
+          - libapache2-mod-php
+        state: latest 
+
+    - name: Start Apache service
+      service:
+        name: apache2
+        state: started
+        enabled: true      
